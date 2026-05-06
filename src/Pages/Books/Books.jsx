@@ -23,13 +23,13 @@ const Books = ({data}) => {
     return (
         <div>
             <h1 className='font-bold text-[40px] items-center text-center'>Books</h1>
-            <div className='grid grid-cols-4 w-11/12 mx-auto'>
                 <Suspense fallback={<span>Loading....</span>}>
-                {
+                <div className='grid md:grid-cols-4 w-11/12 mx-auto  space-y-8 md:space-x-10'>
+                    {
                     data.map((singleBook) => <Book key={singleBook.bookId} singleBook={singleBook}></Book>)
                 }
+                </div>
             </Suspense>
-            </div>
         </div>
     );
 };

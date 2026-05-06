@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Navbar = () => {
 
     const links = <>
         <div className='md:flex gap-10'>
-            <li>Home</li>
-            <li>Listed Books</li>
+            <Link to="/"><li>Home</li></Link>
+            <Link to="/ListedBooks"><li>Listed Books</li></Link>
             <li>Pages to Read</li>
         </div>
     </>

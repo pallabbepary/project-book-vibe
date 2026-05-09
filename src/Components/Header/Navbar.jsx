@@ -6,13 +6,13 @@ const Navbar = () => {
     const links = <>
         <div className='md:flex gap-10'>
             <Link to="/"><li>Home</li></Link>
-            <Link to="/ListedBooks"><li>Listed Books</li></Link>
-            <li>Pages to Read</li>
+            <Link to="/listedBook"><li>Listed Books</li></Link>
+            
         </div>
     </>
 
     return (
-        <div className='bg-base-100 shadow-sm'>
+        <div className='py-2'>
             <div className="navbar w-11/12 mx-auto ">
                 <div className="navbar-start">
                     <div className="dropdown">
